@@ -1246,6 +1246,7 @@ section.portfolio { background:url('../images/bg_portfolio.jpg') no-repeat; top:
 		width:270px;
 		height:auto;
 		z-index:1004;
+		font-size: 0.8em;
 	}
 
 		.contact div {

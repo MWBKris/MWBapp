@@ -323,17 +323,17 @@ function initGoogleMaps( )
 		mapTypeControl: false,
 		streetViewControl: false,
 		disableDefaultUI: true,
-		mapTypeId: "zwartwit"
+		mapTypeId: "mwb"
 	}
 
 	var map = new google.maps.Map($("#map")[0], mapOptions);
-	var styledMapOptions = { name: "zwartwit" }
+	var styledMapOptions = { name: "mwb" }
 	var zwMapType = new google.maps.StyledMapType(styles, styledMapOptions);
-	map.mapTypes.set("zwartwit", zwMapType);
-	map.setMapTypeId("zwartwit");
+	map.mapTypes.set("mwb", zwMapType);
+	map.setMapTypeId("mwb");
 
-	  var places = [{"title": "Zwart/Wit Media","position": [52.0674037, 4.2550955]}];
-	  var icon = 'http://zwartwitmedia.com/zwtest/wp-content/themes/zwartwit/img/img_locationpin.png'
+	  var places = [{"title": "My-Websitebuilder","position": [50.8674037, 3.6550955]}];
+	  var icon = 'http://www.my-websitebuilder.com/ipad/images/img_locationpin.png'
 
 	    $(places).each(function() {
 	      var place = this;
@@ -460,7 +460,7 @@ function initPortfolio( )
 
 		var a = $('<a>',{
 			html: text,
-			href:'#',
+			href:'http://www.my-websitebuilder.com/nl/499-realisaties',
 			data: {list:ul}
 		}).appendTo('#filter');
 	}
