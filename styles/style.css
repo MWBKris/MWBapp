@@ -1,0 +1,1299 @@
+/* ------------------------------------------------------------------------------------------------------------------------------------ STANDARD */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin:0 auto;
+	position:relative;
+	background:url('../images/bg.png');
+	overflow-x:hidden;
+	font-family: Tahoma;
+	font-size:100%;
+}
+
+ul {
+	list-style:none
+}
+
+img,
+fieldset {
+	border:none
+}
+
+
+header,
+footer,
+section,
+aside,
+nav,
+article,
+div {
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight:normal
+}
+
+a {
+	outline: 0;
+}
+a img {
+	border: 0px; text-decoration: none;
+}
+a:link {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0298ed;
+	text-decoration: none;
+}
+
+#site a, #site a:link {
+	color:#0298ed;
+}
+
+#site a:hover {
+	text-decoration:underline;
+}
+
+/* Paragraphs */
+p { margin-bottom: 1.143em; font-size: 0.8em; color: #CCC; line-height: 150%;
+font-weight: normal; }
+* p:last-child { margin-bottom: 0; }
+
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+
+::-moz-selection { background: #0298ed; color: #fff; }
+::selection { background: #0298ed; color: #fff; }
+
+/* Lists */
+ul {
+	list-style: outside disc;
+	margin: 0;
+	padding: 0;
+}
+
+ol {
+	list-style: outside decimal;
+	margin: 1em 0 1.5em 1.5em;
+}
+
+dl { margin: 0 0 1.5em 0; }
+dt { font-weight: bold; }
+dd { margin-left: 1.5em; }
+
+/* Quotes */
+blockquote { font-style: italic; }
+cite { }
+q { }
+
+/* Tables */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+
+	thead th {padding: .5em .4em; text-align: left;}
+	thead td {}
+	tbody td {padding: .5em .4em;}
+	tbody th {}
+
+	tbody .alt td {}
+	tbody .alt th {}
+
+	tfoot th {}
+	tfoot td {}
+
+section {
+	margin:auto;
+	width:2100px;
+	height:1066px;
+	left:50%;
+	margin-left:-1050px;
+	position:absolute;
+	overflow:hidden;
+}
+
+header {
+	position:relative;
+}
+
+.none {
+	display:none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ TEXT */
+
+/* H1 */
+h1 {
+	color:#fff;
+	font-size:52px;
+	font-weight:normal;
+	line-height:0;
+	margin-top:-2px;
+	text-transform:uppercase;
+}
+
+.home.content h1, .gameend h2 {
+	padding-top:80px;
+	line-height:150%;
+	color:#fff;
+	font-size:2em;
+	font-weight:normal;
+	text-transform:none;
+	text-align:center;
+}
+
+.gameend h2 {
+	font-size:1.8em;
+}
+
+.iphone h1 {
+	color:#fff;
+	font-size:3.25em;
+	font-weight:normal;
+	line-height:0;
+	margin-top:-2px;
+	text-transform:uppercase;
+}
+
+.people h1, #site h1,
+.mainservices h1 {
+	display:inline;
+	color:#fff;
+	font-size:3.25em;
+	font-weight:normal;
+	line-height:0;
+	margin-top:0px;
+	text-transform:uppercase;
+}
+
+/* H2 */
+.people h2,
+#site h2,
+.mainservices h2 {
+	color:#0298ed;
+	font-size:1.375em;
+	font-weight:normal;
+	margin-top:-20px;
+	display:inline;
+}
+.people h2 .cufon.cufon-canvas,
+#site h2 .cufon.cufon-canvas,
+.mainservices h2 .cufon.cufon-canvas {
+	top:-8px;
+}
+
+.iphone h2 {
+	color:#0298ed;
+	font-size:1.375em;
+	font-weight:normal;
+	line-height:0;
+}
+
+#site h2 {
+	color:#0298ed;
+}
+
+/* H3 */
+h3 {
+	font-size:1.375em;
+	text-transform:uppercase;
+	color:#fff;
+}
+
+#ipad h3, .ipadOverlay h3 {
+	font-size:1.75em;
+	color:#fff;
+	margin:10px 0px;
+}
+
+/* H4 */
+h4 {
+	font-size:1em;
+	color:#fff;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+
+.green {
+	color:#66cc9d;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ NAVIGATION */
+
+
+.relative {
+	position:relative;
+}
+
+.zindex,
+.people.sam.zindex,
+.people.erwin.zindex,
+.about.iphone.zindex {
+	z-index:100000;
+	background:none;
+	display:block;
+}
+
+.displaynone {
+	display:none;
+}
+
+.hoverimg span {
+	display:none;
+}
+
+.hover {
+	opacity:0;
+	z-index:1000;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ NAVIGATION */
+
+ul#navigation {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 160px;
+    left: -216px;
+    list-style: none;
+    z-index:9999;
+}
+
+ul#navigation li {
+    width: 281px;
+	position:relative;
+	padding-bottom:70px;
+}
+
+ul#navigation li a {
+    display: block;
+	text-align:right;
+    margin-left: 0px;
+	padding:6px 40px 4px 0px;
+    width: 241px;
+    height: 60px;
+	background: url('../images/bg_menuitem.png');
+ 	background-repeat:no-repeat;
+	font-size:2em;
+	text-decoration:none;
+	color:#fff;
+	font-weight:normal;
+	clear:both;
+	position:absolute;
+}
+
+ul#navigation li a.active,
+ul#navigation li a:hover {
+	color:#0298ed;
+}
+
+#scrolldown {
+	width:56px;
+	height:212px;
+	position:absolute;
+	z-index:200;
+	right:0px;
+	top:224px;
+	background:url('../images/img_scrolldown.png');
+}
+
+#scrolldownarrow {
+	width:19px;
+	height:28px;
+	position:absolute;
+	z-index:1000000;
+	right:18px;
+	top:170px;
+	background:url('../images/img_scrolldownarrow.png');
+}
+
+.hovera, .hoverimg {
+	opacity:0;
+	filter:alpha(opacity=0);
+	background:#000000;
+	position:absolute;
+}
+
+.language {
+	font-size:1.4em;
+	color:#ffffff;
+	text-align:center;
+	width:41px;
+	height:36px;
+	padding-top:4px;
+	left:50%;
+	position:absolute;
+	z-index:200;
+	top:10px;
+	background:url('../images/bg_language.png');
+}
+.language.active { color:#0298ed; }
+.language.en { margin-left: 350px; }
+.language.nl { margin-left: 300px; }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ LINES */
+
+.line { position:absolute; left:50%; }
+.line1 { width:461px; height:705px; left:50%; margin-left:-390px; z-index:101; }
+.line2 { width:848px; height:279px; top:705px; margin-left:-419px; z-index:101; }
+.line3 { width:509px; height:843px; top:984px; margin-left:-109px; z-index:201; }
+.line4 { width:668px; height:278px; top:1827px;	margin-left:-547px;	z-index:301; }
+.line5 { width:633px; height:779px; top:2105px;	margin-left:-478px;	z-index:401; }
+.line6 { width:739px; height:300px; top:2884px;	margin-left:-213px; z-index:401; }
+.line7 { width:729px; height:1164px; top:3184px; margin-left:-231px;	z-index:501; }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ SECTIONS */
+
+section.home { background:url('../images/bg_home.jpg') no-repeat; position:fixed; z-index:100; }
+section.aboutus { background:url('../images/bg_about.jpg') no-repeat; top:1066px; z-index:200; }
+section.services { background:url('../images/bg_services.jpg') no-repeat; top:2132px; z-index:300; }
+section.portfolio { background:url('../images/bg_portfolio.jpg') no-repeat; top:3198px; z-index:500; }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ IPHONES */
+
+.iphone {
+	top:0px;
+	left:50%;
+	width:317px;
+	height:290px;
+	padding-left:140px;
+	padding-top:86px;
+	position:absolute;
+	overflow: visible;
+	background:url('../images/bg_iphone.png') no-repeat;
+	text-align:center;
+}
+
+	.iphone .wings {
+		position:absolute;
+		width:447px;
+		height:376px;
+		display:block;
+		background:url('../images/img_iphonewings.png');
+		top:-78px;
+		left:-140px;
+	}
+
+	.about .wings { top:-144px; }
+
+	.iphone .iphone_holder {
+		position:absolute;
+		width: 166px;
+		height: 220px;
+	}
+
+.iphone .btnlinks {
+	background:none;
+	float:left;
+	width:31px;
+	height:31px;
+	margin-left:10px;
+	position:relative;
+}
+
+.iphone .btnrechts {
+	float:right;
+	width:31px;
+	height:31px;
+	margin-right:10px;
+	position:relative;
+}
+
+	.iphone .btnrechts img,
+	.iphone .btnlinks img {
+		position:absolute;
+		left:0px;
+		top:0px;
+	}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ INFO */
+
+.info {
+	left:50%;
+	position:absolute;
+	padding: 15px 0px 0px 18px;
+	width:480px;
+	height:202px;
+	color:#fff;
+	font-size:1.3em;
+	line-height:142%;
+	background:url('../images/bg_info.png') no-repeat;
+}
+
+.about.info {
+	left:50%;
+	position:absolute;
+	padding: 15px 0px 0px 18px;
+	width:480px;
+	height:263px;
+	color:#fff;
+	font-size:1.3em;
+	line-height:142%;
+	background:url('../images/bg_infoabout.png') no-repeat;
+}
+
+	.logo {
+		position:absolute;
+		left:50%;
+		top: 50px;
+		margin-left: -376px;
+		width:270px;
+		height:270px;
+		z-index:101;
+	}
+
+	.home.content {
+		position:absolute;
+		left:50%;
+		padding: 130px 20px 0px 20px;
+		top: 250px;
+		margin-left: -200px;
+		width:587px;
+		height:507px;
+		z-index:100;
+		background:url('../images/bg_home_content.png') no-repeat;
+		text-align:center;
+	}
+
+	.home.iphone {
+		margin-left:-300px;
+		top: 800px;
+		z-index:102;
+	}
+
+	.about.info {
+		top:1116px;
+		margin-left:-208px;
+		z-index:200;
+	}
+
+	.about.line {
+		width:539px;
+		height:237px;
+		background:url('../images/img_lineabout.png');
+		position:absolute;
+		left:50%;
+		top:1490px;
+		margin-left:-220px;
+		z-index:200;
+	}
+
+	.about.iphone {
+		margin-left:136px;
+		top:1500px;
+		z-index:1200;
+	}
+
+
+	.people, .serviceitem {
+		position:absolute;
+		left:50%;
+		width:410px;
+		height:490px;
+		background:url('../images/content_aboutpeople.png') no-repeat;
+	}
+
+	.serviceitem {
+		background:url('../images/content_services.png') no-repeat;
+		z-index:1000;
+		top:2400px;
+		margin-left:-206px;
+		display:none;
+	}
+
+	.people.sam {
+		top:1600px;
+		margin-left:-420px;
+		z-index:200;
+	}
+
+	.people.erwin {
+		top:1710px;
+		margin-left:80px;
+		z-index:200;
+	}
+
+	.people .image,
+	.serviceitem .image {
+		position:relative;
+		padding-left:126px;
+		height:166px;
+	}
+
+		.image img {
+			position:absolute;
+		}
+
+	.people header,
+	.serviceitem header {
+		width:100%;
+		height:56px;
+		padding-top:7px;
+		text-align:center;
+	}
+
+	.people .content,
+	.serviceitem .content {
+		text-align:center;
+		width:290px;
+		height:152px;
+		padding:10px 60px 10px 60px;
+
+	}
+
+	.people footer,
+	.serviceitem footer {
+		width:274px;
+		padding-top:6px;
+		padding-left:94px;
+		height:56px;
+		margin:0 auto;
+		text-align:center;
+	}
+
+	.serviceitem footer { padding-left:186px;}
+
+	.people footer div,
+	.serviceitem footer a {
+		width: 37px;
+		height: 37px;
+		position:relative;
+		float:left;
+		overflow: hidden;
+		background:none;
+		margin-right:10px;
+	}
+
+		.people footer div img,
+		.serviceitem footer img {
+			top: 0px;
+			left: 0px;
+			position:absolute;
+		}
+
+.overlayimage { width:166px; height:166px; top:0px; left:126px; }
+.overlaybutton { width:37px; height:37px; top:406px; left:115px; }
+.overlaybutton.overlaytwitter { left:115px; }
+.overlaybutton.overlayfacebook { left:162px; }
+.overlaybutton.overlaylinkedin { left:209px; }
+.overlaybutton.overlaymail { left:256px; }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ SERVICES */
+
+.mainservices {
+	width:291px;
+	height:258px;
+	position:absolute;
+	left:50%;
+	text-align:center;
+}
+
+	.mainservices.web { top:2466px; margin-left:206px; z-index:400; }
+	.mainservices.media { top:2746px; margin-left:-436px; z-index:400; }
+
+	.mainservices .image {
+		width:291px;
+		height:258px;
+		display:block;
+		position:relative;
+	}
+
+	.mainservices .image img { position:relative; }
+
+	.mainservices .label {
+		width:291px;
+		height:59px;
+		padding-top:5px;
+		top:96px;
+		display:block;
+		position:absolute;
+		z-index:1000;
+		background:url('../images/lbl_services.png');
+	}
+
+.services.info {
+	top:2182px;
+	margin-left:-270px;
+	z-index:400;
+}
+
+.item_services, .btn_services {
+	left:50%;
+	width:151px;
+	padding:0;
+	color:#ffffff;
+	font-size:1.4em;
+	line-height:0;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	position:absolute;
+	display:block;
+	cursor:pointer;
+	background:url('../images/img_item_services.png');
+}
+
+.btn_services {
+	opacity:0;
+	filter:alpha(opacity=0);
+	height:150px;
+}
+
+	.btn_services span {
+		display:none;
+	}
+
+	.item_services div, .btn_services div {
+		display:none;
+	}
+
+
+.item_services:hover { color:#0298ed; }
+.item_services.onew { padding-top:66px; height:84px; }
+.item_services.twow { padding-top:54px; height:96px; }
+
+.item_services.webdesign, .btn_services.webdesign { margin-left:-106px; top:2492px; z-index:400; }
+.item_services.writing, .btn_services.writing { margin-left:0px; top:2842px; z-index:400; }
+.item_services.interaction, .btn_services.interaction { margin-left:70px; top:2417px; z-index:400; }
+.item_services.webdevelopment { margin-left:72px; top:2657px; z-index:402; }
+.item_services.conceptdevelopment { margin-left:-310px; top:2542px; z-index:402; }
+.item_services.rtv	{ margin-left:-160px; top:2683px; z-index:402; }
+
+
+.btn_services.webdesign,
+.btn_services.writing,
+.btn_services.interaction {
+	z-index:1000;
+}
+
+
+.services_arrows {
+	left:50%;
+	top:2590px;
+	width:370px;
+	height:300px;
+	z-index:400;
+	position:absolute;
+	margin-left:-150px;
+}
+
+.arrow { float:right; display:none; }
+.holder_arrow611 { width:43px; height:300px; float:right; }
+
+.arrow1 { width:32px; height:300px; background:url('../images/arrow1.png'); }
+.arrow2 { width:34px; height:300px; background:url('../images/arrow2.png');	}
+.arrow3 { width:35px; height:300px; background:url('../images/arrow3.png');	}
+.arrow4 { width:34px; height:300px; background:url('../images/arrow4.png');	}
+.arrow5 { width:31px; height:300px; background:url('../images/arrow5.png'); }
+.arrow6 { width:43px; height:71px; background:url('../images/arrow6.png');	}
+.arrow7 { width:43px; height:35px; background:url('../images/arrow7.png'); }
+.arrow8 { width:43px; height:39px; background:url('../images/arrow8.png'); }
+.arrow9 { width:43px; height:37px; background:url('../images/arrow9.png'); }
+.arrow10 { width:43px; height:33px; background:url('../images/arrow10.png'); }
+.arrow11 { width:43px; height:85px; background:url('../images/arrow11.png'); }
+.arrow12 { width:23px; height:300px; background:url('../images/arrow12.png'); }
+.arrow13 { width:34px; height:300px; background:url('../images/arrow13.png'); }
+.arrow14 { width:35px; height:300px; background:url('../images/arrow14.png'); }
+.arrow15 { width:36px;height:300px; background:url('../images/arrow15.png'); }
+.arrow16 { width:31px; height:300px; background:url('../images/arrow16.png'); }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ PORTFOLIO IPAD */
+
+.portfolio.info {
+	top:3248px;
+	margin-left:-208px;
+	z-index:500;
+}
+
+#ipad {
+	display:block;
+	width: 589px;
+	height:440px;
+	padding-top:60px;
+	padding-bottom:57px;
+	padding-left:64px;
+	padding-right:68px;
+	margin:0 auto;
+	background:url('../images/ipad.png');
+	position:absolute;
+	z-index:502;
+	left:50%;
+	margin-left:-340px;
+	top:3600px;
+}
+
+	#ipad .wings {
+		position:absolute;
+		width:982px;
+		height:557px;
+		display:block;
+		background:url('../images/img_ipadwings.png');
+		top:-78px;
+		left:-194px;
+	}
+
+.ipadOverlay, .ipadLoader {
+	display:block;
+	width: 589px;
+	height:440px;
+	position:absolute;
+	overflow:hidden;
+	z-index:1000;
+	background:url('../images/ipad_overlay.png');
+}
+.ipadLoader { z-index:1001;	display:none; }
+
+	.loaderBox {
+		position:absolute;
+		height:58px;
+		padding:25px 0px 0px 26px;
+		width:58px;
+		top:160px;
+		left:260px;
+		background:url('../images/bg_loader.png');
+	}
+
+	.ipadOverlay .content{
+		display:block;
+		overflow-y:scroll;
+		overflow-x:hidden;
+		display:block;
+		width: 577px;
+		height:399px;
+		padding-top:16px;
+		padding-left:10px;
+		float:left;
+		z-index:1000;
+		position:relative;
+	}
+
+	.ipadOverlay .contentholder{
+		width:570px;
+		display:block;
+		height:auto;
+		position:relative;
+	}
+
+
+	.ipadOverlay .content .containerleft {
+		width:320px;
+		height:auto;
+		display:block;
+		float:left;
+		padding-bottom:10px;
+	}
+
+	.ipadOverlay .content .containerright {
+		width:232px;
+		height:auto;
+		display:block;
+		float:left;
+		text-align:right;
+		padding-bottom:10px;
+	}
+
+
+	.ipadOverlay .nav, #ipadContainer .nav {
+		width:556px;
+		height:30px;
+		float:left;
+		padding:10px 0px 0px 8px;
+	}
+
+	.nav a {
+		color:#fff;
+		font-size:1em;
+		margin-right:20px;
+		text-transform:uppercase;
+		text-decoration:none;
+	}
+	.nav a.close {
+		float:right;
+		margin-right:0px;
+	}
+
+	.nav a.active, .nav a:hover {
+		color:#0298ed;
+	}
+
+
+
+	/* ------------------------------------------------------------------------------------------------------------------------------------ SLIDESHOW IPAD */
+
+	#slides {
+		padding:10px 0px 0px 0px;
+		position:relative;
+		float:left;
+	}
+
+	.slides_container {
+		width:552px;
+		overflow:hidden;
+		position:relative;
+		display:none;
+	}
+
+	.slides_container a {
+		display:block;
+	}
+
+	.slides_container a img {
+		display:block;
+	}
+
+
+	#slides .next,#slides .prev {
+		position:absolute;
+		top:232px;
+		left:20px;
+		width:31px;
+		height:31px;
+		display:block;
+		z-index:101;
+	}
+
+	#slides .next {
+		left:500px;
+	}
+
+		#slides .next img,#slides .prev img { position:absolute; }
+
+	.pagination {
+		float:left;
+		width:300px;
+		margin:0;
+		padding:10px 0px 4px 0px;
+		list-style: none;
+	}
+
+	.pagination li {
+		list-style:none;
+	}
+
+	.pagination li a {
+		display:block;
+		width:15px;
+		height:0;
+		padding-top:14px;
+		margin-right:2px;
+		background-image:url('../img/ipad/pagination.png');
+		background-position:0 0;
+		float:left;
+		overflow:hidden;
+		text-decoration:none;
+	}
+
+	.pagination li.current a {
+		background-position:0 -14px;
+	}
+
+
+#ipadContainer {
+	display:block;
+	width: 589px;
+	height:439px;
+	margin:0 auto;
+	position:relative;
+	float:left;
+	background:url('../img/ipad/ipad_overlay.png');
+}
+
+	#ipadContainer .content{
+		display:block;
+		overflow-y:scroll;
+		width: 589px;
+		height:399px;
+		float:left;
+		z-index:1000;
+	}
+
+#ipadContainer li{
+	float: left;
+	display:block;
+	list-style: none outside none;
+	margin: 5px;
+	position: relative;
+	padding:12px 12px 6px 12px;
+	width: 251px;
+	height:128px;
+	background:url('../img/ipad/bg_item.jpg') no-repeat;
+}
+
+	#ipadContainer li a {
+		width: 251px;
+		text-align:right;
+		height:128px;
+		display:block;
+		text-decoration:none;
+		position:absolute;
+	}
+
+	#ipadContainer li a span{
+	  width: 251px;
+	  height: 101px;
+	  background: url('../img/bg_porfoliohover.png') no-repeat center center;
+	  position: absolute;
+	  display: none;
+	 }
+
+#ipadContainer ul{
+	overflow:hidden;
+}
+
+#ipadContainer ul.hidden{
+	display:none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ SCROLLPANE */
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 12px;
+	height: 100%;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #454545;
+	position: relative;
+	top: 0;
+	left: 0;
+	width:6px;
+	cursor: pointer;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	opacity:0.7;
+}
+
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 10px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 10px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
+
+
+.jspTrack .jspActive,
+.jspTrack .jspHover,
+.jspDrag:hover
+{
+	opacity:1;
+	/*background: #fff;*/
+}
+
+.jspScrollable {
+	outline: none;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ TWITTER */
+
+	.zwtwitter {
+		font-family: tahoma;
+		font-size: 0.8em;
+		color: #ccc;
+		width:166px;
+		height:114px;
+	}
+
+	.zwtwitter .tweet {
+		width:146px;
+		padding:0px 10px;
+		height:114px;
+		display:block;
+	}
+
+	.zwtwitter .tweet a {
+		text-decoration: none;
+		color: #0298ed;
+	}
+
+	.zwtwitter .tweet a:hover {
+		text-decoration: underline;
+	}
+
+	.zwtwitter .tweet .time {
+		font-size: 0.7em;
+		font-style: italic;
+		color: #666666;
+	}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ FOOTER */
+
+#site {
+	background:url('../images/bg_footer.png') repeat-x;
+	width:2100px;
+	height:510px;
+	left:50%;
+	margin-left:-1050px;
+	z-index:1000;
+	top:4264px;
+	position:absolute;
+}
+
+	#map {
+	  width: 270px;
+	  height:300px;
+	  position: relative;
+	  overflow: hidden;
+	}
+
+	#site .container {
+		width:966px;
+		height:auto;
+		margin:auto;
+		display:block;
+		position:relative;
+	}
+
+	#site .btntop {
+		background:url('../images/btn_footer.png');
+		width:170px;
+		height:88px;
+		display:block;
+		position:absolute;
+		left:420px;
+		top:-75px;
+		z-index:1001;
+	}
+
+	#site .btntop:hover {
+		background-position:left bottom;
+	}
+
+	#site .block {
+		width:322px;
+		padding-top:70px;
+		height:440px;
+		margin:auto;
+		display:block;
+		float:right;
+		position:relative;
+	}
+		#site .block.flickr { width:290px; }
+
+		.block article
+		{
+			padding-top:20px;
+			padding-right:50px;
+			width:272px;
+		}
+		article h3 {
+			padding:0px 0px 6px 0px;
+		}
+
+	.mapoverlay {
+		width:280px;
+		height:310px;
+		background:url('../images/img_googleoverlay.png');
+		position:absolute;
+		display:block;
+		z-index:1000;
+	}
+
+	.contactus {
+		position:absolute;
+		top:70px;
+		z-index:1003;
+	}
+
+	#contactinfo, #btncontactinfo {
+		width:270px;
+		height:170px;
+		padding-top:100px;
+		background:url('../images/bg_black.png');
+		position:absolute;
+		z-index:1002;
+		color:#fff;
+		display:none;
+		cursor:pointer;
+		text-align:center;
+	}
+
+	#btncontactinfo {
+		height:160px;
+		background:none;
+		position:absolute;
+		top:120px;
+		display:block;
+	}
+
+	.btnoverlay {
+		height:25px;
+		display: inline-block;
+		margin:auto;
+	}
+	.btnoverlay:hover {
+		background-position:left bottom;
+	}
+	.mailus {
+		width:76px;
+		background:url('../images/btn_mailus.png');
+	}
+	.route {
+		width:58px;
+		background:url('../images/btn_route.png');
+	}
+
+
+
+	.contact {
+		position:absolute;
+		top:310px;
+		width:270px;
+		height:auto;
+		z-index:1004;
+	}
+
+		.contact div {
+			width:270px;
+			height:40px;
+			display:block;
+			float:left;
+		}
+
+		.contact img {
+			float:left;
+			margin-right:10px;
+		}
+
+#zwflickr { padding:30px 0px 0px 3px;}
+.flickr { margin: 0; padding: 0; overflow: hidden; }
+.flickr li { list-style: none; float: left; margin: 0px 10px 10px 0px; }
+.flickr li a {  }
+.flickr li img { display: block; height:60px; }
+.flickr li a img { border: none; }
+
+.social {
+	text-align:right;
+	position:absolute;
+	width:200px;
+	height:auto;
+}
+
+#twitter {
+	top:420px;
+	left:96px;
+}
+
+#facebook {
+	top:450px;
+	left:71px;
+}
+
+#html5 {
+	position:absolute;
+	width:48px;
+	height:54px;
+	display:block;
+	top:420px;
+	left:110px;
+	background:url('../images/btn_html5.png') top left;
+}
+#html5:hover
+{
+	background-position:left bottom;
+}
