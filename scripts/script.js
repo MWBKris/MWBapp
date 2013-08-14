@@ -25,9 +25,9 @@ function initializeCufon()
 	Cufon.replace('.info', { fontFamily: 'zw_font2' });
 	Cufon.replace('#preloadertext', { fontFamily: 'zw_font2' });
 	Cufon.replace('.home.content h1', { fontFamily: 'zw_font2' });
-	Cufon.replace('.item_services', { hover: {color: '#cc9900'},hoverables: { a: true, div: true }, fontFamily: 'zw_font1_demicomp' });
-	Cufon.replace('.nav a', { hover: {color: '#cc9900'},hoverables: { a: true }, fontFamily: 'zw_font1_demicomp'});
-	Cufon.replace('.language', { hover: {color: '#cc9900'},hoverables: { a: true }, fontFamily: 'zw_font1_demicomp'});
+	Cufon.replace('.item_services', { hover: {color: '#0298ED'},hoverables: { a: true, div: true }, fontFamily: 'zw_font1_demicomp' });
+	Cufon.replace('.nav a', { hover: {color: '#0298ED'},hoverables: { a: true }, fontFamily: 'zw_font1_demicomp'});
+	Cufon.replace('.language', { hover: {color: '#0298ED'},hoverables: { a: true }, fontFamily: 'zw_font1_demicomp'});
 	Cufon.replace('#ipad h3', { fontFamily: 'zw_font1_demicomp' });
 	Cufon.replace('.ipadOverlay h3', { fontFamily: 'zw_font1_demicomp' });
 	Cufon.replace('#site h3', { fontFamily: 'zw_font1_demicomp' });
@@ -172,7 +172,7 @@ function initButtons()
 	// BTN SERVICES
 	$('.btn_services').hover(
 	  function () {
-	    $($("span", this).html()).css('color', '#cc9900');
+	    $($("span", this).html()).css('color', '#0298ED');
 		Cufon.refresh('.item_services');
 	  },
 	  function () {
@@ -499,7 +499,7 @@ function initIpadJs( )
 
 	$('.aitem').hover(
 	  function () {
-	    $(this).css('color', '#cc9900');
+	    $(this).css('color', '#0298ED');
 		Cufon.refresh('.nav a');
 	  },
 	  function () {
